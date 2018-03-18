@@ -1,0 +1,21 @@
+version: '3.4'
+
+
+  
+services: 
+  php7-project:
+    build:  
+      context: . 
+    image: hbtlabs/php7-project
+    expose:
+      - 9000
+    environment:
+       PHP_XDEBUG_ENABLED: 1 
+       # ip from running ifconfig on host and using eth0. ensure it is pingable from container.
+       XDEBUG_CONFIG: remote_host=192.168.0.100
+    volumes:
+      - .:/php7-project
+      - ./config/php.ini:/etc/php/7.0/cli/php.ini
+      
+    
+
