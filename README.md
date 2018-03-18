@@ -53,6 +53,8 @@ xdebug.remote_port=9000
 
 create dbg proxy
 
+![Alt text](img/proxy.png?raw=true "Title")
+
 create debug configuration
 
 create server and map paths
