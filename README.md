@@ -51,15 +51,39 @@ xdebug.remote_port=9000
 ## set up phpstorm ide
 
 
-create dbg proxy
+### create dbg proxy
 
 ![Alt text](img/proxy.png?raw=true "Title")
 
-create debug configuration
+### create debug configuration
 
-create server and map paths
+![Alt text](img/debug.png?raw=true "Title")
+
+### create debug remote servers configuration and map the paths
+
+![Alt text](img/servers.png?raw=true "Title")
 
 
-## set breaking point and test
+### set breaking point
 
+![Alt text](img/breakpoint.png?raw=true "Title")
+
+### start debugger to listen for incoming connection
+
+![Alt text](img/listen.png?raw=true "Title")
+
+### run script in docker
+
+```
 dc run --entrypoint /php7-project/src/later.php php7-project
+```
+
+![Alt text](img/cli.png?raw=true "Title")
+
+### code steps through debugger
+
+![Alt text](img/code-debug.png?raw=true "Title")
+
+
+
+
