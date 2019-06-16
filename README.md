@@ -7,7 +7,7 @@ Goal:
 - seamless IDE integration
 
 
-## basic project and hello
+## basic project and hello in CLI
 
 
 ```
@@ -87,3 +87,11 @@ dc run --entrypoint /php7-project/src/later.php php7-project
 
 
 
+
+## Apache2 / Web browser version
+
+CLI uses PHP_XDEBUG_ENABLED environment variable to start the debugger
+
+Apache: for web server, send a request to the port to start the debugger session e.g http://localhost:7074/index.php/?XDEBUG_SESSION_START=phpstorm
+
+Apache will not care about PHP_XDEBUG_ENABLED environment variable
